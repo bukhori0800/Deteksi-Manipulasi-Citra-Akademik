@@ -236,32 +236,40 @@ input::placeholder, textarea::placeholder {
     color: #b3a98c !important;
 }
 
-/* ── BUTTON ──────────────────────────────────────────── */
+/* ── BUTTON (Melengkung Rapi & Konsisten) ───────────────── */
+div[data-testid="stButton"] > button,
 .stButton > button {
-    width: 100%;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-lt) 100%);
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 14px;
+    width: 100% !important;
+    border-radius: 12px !important;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-lt) 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
     letter-spacing: 0.5px;
-    border: none;
-    padding: 10px 16px;
-    transition: all 0.25s;
-    box-shadow: 0 4px 20px rgba(184,144,47,0.25);
+    border: none !important;
+    padding: 10px 16px !important;
+    transition: all 0.25s ease-in-out !important;
+    box-shadow: 0 4px 20px rgba(184,144,47,0.25) !important;
+    overflow: hidden !important;
 }
+
+div[data-testid="stButton"] > button:hover,
 .stButton > button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(184,144,47,0.40);
-    color: #ffffff;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 28px rgba(184,144,47,0.40) !important;
+    color: #ffffff !important;
+    border: none !important;
 }
+
+div[data-testid="stButton"] > button:active,
 .stButton > button:active {
-    transform: translateY(0);
+    transform: translateY(0) !important;
 }
+
+div[data-testid="stButton"] > button p,
 .stButton > button p {
     color: #ffffff !important;
 }
-
 /* ── METRIC ──────────────────────────────────────────── */
 div[data-testid="stMetric"] {
     background: var(--surface);
